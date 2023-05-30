@@ -28,7 +28,7 @@ test("divFunction", () => {
 test("divFunction b is 0", () => {
   const a = 7;
   const b = 0;
-  expect(divFunction(a, b)).not.toEqual(a / b);
+  expect(divFunction(a, b)).toEqual(a / b);
 });
 
 describe("add and mul Function", () => {
