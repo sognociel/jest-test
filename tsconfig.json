@@ -1,20 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "strict": true,
+    "target": "es6",
+    "types": ["node", "jest"],
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "src",
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "ES6",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "typeRoots": ["types", "./node_modules/@types"]
   },
-  "include": ["src"]
+  "include": ["src", "public/API", "__test__", "src/pages/.tsx"]
 }
